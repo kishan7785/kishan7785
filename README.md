@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @kishan7785
 - 👀 I’m interested in Gym,Sports Activities
-- 🌱 I’m currently learning Web Designing
+- 🌱 I’m currently learning App Developement
 - 💞️ I’m looking to collaborate on personalised Products
 - 📫 How to reach me kishan.1234.dharajiya@gmail.com
 
