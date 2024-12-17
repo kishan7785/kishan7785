@@ -3,6 +3,7 @@
 - 🌱 I’m currently learning App Developement
 - 💞️ I’m looking to collaborate on personalised Products
 - 📫 How to reach me kishan.1234.dharajiya@gmail.com
+- https://in.linkedin.com/in/kishan-dharajiya-a00305211
 
 <!---
 kishan7785/kishan7785 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
