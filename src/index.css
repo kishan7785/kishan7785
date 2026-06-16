@@ -1,0 +1,87 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: Inter, system-ui, sans-serif;
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #0a0a0a;
+  color: #f5f5f5;
+  overflow-x: hidden;
+}
+
+::selection {
+  background-color: rgb(103 232 249);
+  color: rgb(22 78 99);
+}
+
+.glass-surface {
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(var(--glass-frost, 16px)) saturate(var(--glass-saturation, 140%));
+  -webkit-backdrop-filter: blur(var(--glass-frost, 16px)) saturate(var(--glass-saturation, 140%));
+}
+
+.glass-surface::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.18) 0%,
+    rgba(255, 255, 255, 0.02) 40%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #93c5fd, #cbd5e1, #c4b5fd);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.section-title {
+  @apply mb-8 text-4xl font-semibold tracking-tight lg:text-5xl;
+}
+
+.section-shell {
+  @apply mx-auto w-full max-w-6xl px-6 py-20 lg:px-8;
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow:
+    0 8px 32px rgba(0, 0, 0, 0.35),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(24px) saturate(160%);
+  -webkit-backdrop-filter: blur(24px) saturate(160%);
+}
+
+.glass-nav::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.14) 0%,
+    rgba(255, 255, 255, 0.03) 45%,
+    rgba(255, 255, 255, 0) 100%
+  );
+}
