@@ -27,5 +27,5 @@ function copyStaticAssets() {
 
 export default defineConfig({
   plugins: [react(), copyStaticAssets()],
-  base: process.env.GITHUB_PAGES ? "/kishan.github.io/" : "./",
+  base: process.env.GITHUB_PAGES ? "/" : "./",
 });
